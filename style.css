@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: white;
+    font-size: 18px;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 8vh;
+    font-family: ubuntu,sans-serif;
+    background-color: #291b89;
+    height: 10vh;
+    /* transition: all .3s ease; */
+}
+.nav-container{
+    display: flex;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    position: fixed;
+}
+.nav-container ul {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 35vw;
+}
+
+.nav-container ul li{
+    text-align: -webkit-match-parent;
+    padding: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu-btn {
+    font-size: 23px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: fixed;
+}
+.home{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    justify-content: space-around;
+    background: rgb(29,118,189);
+    background: linear-gradient(90deg, rgba(29,118,189,1) 0%, rgba(208,234,235,1) 100%, rgba(192,178,228,1) 100%);
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-image img{
+    height: 287px;
+    width: 307px;
+    /* justify-content: center; */
+}
+.text1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 70px;
+    justify-content: left;
+}
+.text2{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 4px;
+    padding-left: 2px;
+   
+}
+.text3{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 2px;
+    color: #0f056d;
+}
+.About-head{
+    height: 5vh;
+    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 40px;
+    font-family: ubuntu,sans-serif;
+    position: relative;
+}
+.About{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    justify-content: space-around;
+    line-height: 26pt;
+}
+.About-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 750px;
+    text-align: justify;
+}
+.About-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-image img{
+    height: 287px;
+    width: 307px;
+    /* justify-content: center; */
+}
+.text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    justify-content: left;
+}
+
+.MyProjects{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    line-height: 26pt;
+    /* justify-content: space-around; */
+    flex-direction:column;
+}
+.MyProjects-head{
+    text-align: center;
+    padding-top: 90px;
+}
+.MyProject-Container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+}
+.card{
+    width: 368px;
+    height: 150px;
+    margin: 10px 14px;
+    transition: all 0.5s linear;
+    border-radius: 10px;
+    border-style: solid;
+    position: relative;
+    background-color: #90dfff;
+    box-shadow: 2px 4px 4px hsl(231, 95%, 37%);
+}
+.face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.face.face1{
+    background-color: rgb(111, 1, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px;
+}
+.card:hover .face.face2 {
+    height: 30px;
+}
+.face.face2 {
+    background-color: burlywood;
+    transition: 0.5s;
+    background: rgb(29,118,189);
+    background: linear-gradient(90deg, rgba(29,118,189,1) 0%, rgba(18,237,246,1) 100%, rgba(192,178,228,1) 100%);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+  }
+
+.Skills{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    line-height: 26pt;
+    /* justify-content: space-around; */
+    flex-direction:column;
+}
+.Skills-head{
+    text-align: center;
+    padding-top: 90px;
+}
+.Skills-Container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 400px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #291b89;
+    box-shadow: 2px 8px 10px hsl(231, 95%, 37%);
+}
+.Skills-card{
+    width: 800px;
+}
+
+.bars{
+    margin-bottom: 15px;
+}
+.info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(123, 20, 220);
+}
+.html::before{
+    width: 90%;
+}
+.css::before{
+    width: 60%;
+}
+
+.js::before{
+    width: 70%;
+}
+
+.mysql::before{
+    width: 70%;
+}
+
+.php::before{
+    width: 80%;
+}
+
+.c::before{
+    width: 90%;
+}
+
+.python::before{
+    width: 80%;
+}
+
+.java::before{
+    width: 85%;
+}
+
+.Education{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    line-height: 26pt;
+    /* justify-content: space-around; */
+    flex-direction:column;
+    background-color:#f2f2f2;
+}
+.Education-head{
+    text-align: center;
+    padding-top: 90px;
+}
+.Education-Container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 258px;
+    flex-direction: row;
+    border-radius: 10px;
+    border-color: #291b89;
+    box-shadow: 2px 8px 10px hsl(231, 95%, 37%);
+    background: #ADA996;  /* fallback for old browsers */
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.Acedemics{
+    height: 300px;
+    width: 400px;
+    margin: 50px 50px;
+    border-radius: 10px;
+    color: black;
+}
+.caption{
+    padding-left: 150px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.Certificate{
+    height: 300px;
+    width: 400px;
+    margin: 50px 50px;
+    line-height: 35pt;
+    color: black;
+}
+.contact{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ubuntu,sans-serif;
+    line-height: 26pt;
+    flex-direction: column;
+}
+.contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.contact .contact-content{
+    display: flex;
+    margin: 100px 100px;
+    border-color: #291b89;
+    box-shadow: 2px 2px 2px 2px hsl(231, 95%, 37%);
+    padding: 20px;
+    height: 80%;
+    padding-top: 5%;
+
+}
+.title{
+    text-align: center;
+    padding-top: 100px;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact form{
+    width: 60%;
+    margin-left: 20%;
+}
+.contact  form .fields{
+    display: flex;
+    border-radius: 20px;
+}
+.contact  form .field,
+.contact  form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.contact  form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact  form .name{
+    margin-right: 10px;
+}
+.contact  form .field input,
+.contact  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact  form .field input:focus,
+.contact  form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact  form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact  form .button-area{
+  display: flex;
+  align-items: center;
+}
+ form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: rgb(40, 20, 220);
+  border: 2px solid rgb(50, 20, 220);
+  transition: all 0.3s ease;
+}
+ form .button-area button:hover{
+  color: rgb(80, 20, 220);
+  background: none;
+}
+@media (max-width: 1496px){
+    .Acedemics {
+        height: 297px;
+        width: 459px;
+        margin: 50px 0px;
+    }
+    .Certificate {
+        height: 250px;
+        width: 400px;
+        margin: 50px 0px;
+    }
+    .Skills{
+        height: 120vh;
+        width: 100vw;
+    }
+    .Education-Container {
+        margin: 50px 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1104px) {
+    .About-image img{
+        height: 277px;
+        width: 290px;
+        /* justify-content: center; */
+    }
+    .About-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+        width: 500px;
+    }
+    .Skills-Container {
+        margin: 3px 183px;
+    }
+    .Acedemics {
+        height: 297px;
+        width: 459px;
+        margin: 50px 0px;
+    }
+    .Certificate {
+        height: 250px;
+        width: 400px;
+        margin: 50px 0px;
+    }
+    .Education-Container {
+        margin: 50px 54px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .home-image img {
+        height: 261px;
+        width: 265px;
+        /* justify-content: center; */
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .nav-container {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: rgb(142, 190, 204);
+        text-align: center;
+        transition: all 0.3s ease;
+        justify-content: center;
+        align-items: center;
+        left: -100%;
+    }
+    .navbar .nav-container ul{
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0%;
+    }
+    .navbar .nav-container.active{
+        left: 0;
+    }
+    .navbar .nav-container li{
+        display: block;
+        padding: 10px;
+    }
+    .navbar .nav-container li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    .About-image img{
+        height: 259px;
+        width: 272px;
+        /* justify-content: center; */
+    }
+    .About{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .About-content{
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+        width: 582px;
+        padding-left: 86px;
+        justify-content: center;
+    }
+    .MyProjects{
+        height: 146vh;
+    }
+    .Skills {
+        height: 112vh;
+    }
+    .Skills-Container {
+        margin: 19px 80px;
+    }
+    .Education {
+        display: flex;
+        height: 152vh;
+    }    
+    .Acedemics {
+        margin: 50px 88px;
+    }
+    .Certificate {
+        margin: 50px 86px;
+    }
+    .Education-Container {
+        margin: 50px 54px;
+    }
+    .contact .contact-content {
+        display: flex;
+        margin: 92px 63px;
+    }
+    .form{
+        padding-left: 10px;
+    }
+    .text{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .nav-container{
+        padding: 0 80px;
+    }
+    .navbar{
+        position: fixed;
+    }
+    /* .navbar .nav-container {
+        height: 120vh;
+        width: 120vw;
+        position: fixed;
+    } */
+   .home{
+        width: 121vw;
+        height: 119vh;
+        flex-direction: column-reverse;
+    }
+    .About{
+        width: 121vw;
+        height: 119vh;
+    }
+    .home-content{
+        padding-left: 147px;
+    }
+    .About .About-content{
+        width: 100vw;
+        height: 100vh;
+    }
+    .MyProjects{
+        width: 107vw;
+        height: 147vh;
+    }
+    .Skills{
+        width: 116vw;
+        height: 117vh;
+    }   
+    .Education{
+        width: 119vw;
+        height: 159vh;
+    }
+    .contact{
+        width: 121vw;
+        height: 100vh;
+    }
+}
+@media (max-width: 500px) {
+    .menu-btn{
+            padding-left: 36px;
+    }
+    .nav-container{
+        padding: 0 80px;
+    }
+    .navbar{
+        position: fixed;
+    }
+    /* .navbar .nav-container {
+        height: 117vh;
+        width: 108vw;
+        position: fixed;
+    } */
+    .home{
+        width: 108vw;
+        height: 100vh;
+    }
+    .home .home-image{
+        padding-top: 20px;
+    }
+    .home-content{
+       padding-left: 20px;
+    }
+    .About{
+        width: 100vw;
+    }
+    .About-content{
+        width: 93px;
+        padding-left: 10px;
+    }
+    .MyProjects{
+        width: 100vw;
+    }
+    .Skills{
+        width: 100vw;
+    }   
+    .Skills-Container {
+        margin: 19px 30px;
+    }
+    .Education{
+        width: 100vw;
+    }
+    .Education-Container {
+        margin: 50px 9px;
+    }
+    .Education-Container {
+        flex-direction: column;
+    }
+    .Acedemics {
+        margin: 45px 11px;
+        font-size: 14px;
+    }
+    .Certificate {
+        margin: 53px 1px;
+        font-size: 14px;
+    }
+    .contact{
+        width: 100vw;
+    }
+    .contact .contact-content {
+        display: flex;
+        margin: 75px 15px;
+    }
+    .fields{
+        width: 200px;
+    }
+    .field{
+         width: 200px;
+    }
+}
